@@ -7,6 +7,7 @@
   --accent-text-color: #212121;
   --border-color: #eeeeee;
   --address-color: rgba(255, 255, 255, 0.6);
+  --icons-grey-color: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -333,6 +334,48 @@ div.card-content {
   background-color: var(--main-white-color);
 }
 
+/* ссылки на соцсети */
+.social {
+  display: flex;
+  background-color: var(--main-white-color);
+  padding-top: 16px;
+
+  justify-content: center;
+  align-items: center;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: inherit;
+  /* color: var(--icons-grey-color); */
+  border-radius: 50%;
+  /* outline: 1px solid red; */
+}
+.social-item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.social-item {
+  display: block;
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  background-color: inherit;
+  fill: var(--icons-grey-color);
+}
+
+.social-link:hover {
+  background-color: var(--main-blue-color);
+}
+
+.social-link:hover .social-icon {
+  fill: var(--main-white-color);
+}
 /*Footer*/
 .footer {
   background-color: var(--accent-bg-color);
@@ -341,7 +384,7 @@ div.card-content {
 }
 
 .footer-cont {
-  display: block;
+  display: inline-block;
   flex-direction: column;
   /* justify-content: ;*/
 }
@@ -381,6 +424,10 @@ div.card-content {
   color: var(--main-blue-color);
 }
 
+.footer-join {
+  display: inline-block;
+  text-transform: uppercase;
+}
 /*Кнопки на портфолио*/
 .portfolio-button {
   padding: 6px 22px;
