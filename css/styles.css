@@ -50,7 +50,7 @@ ol {
   padding: 0;
 }
 
-/* Задаем размер контейнера 1700+ по 15 паддинги голубая область */
+/* Задаем размер контейнера 1200+ по 15 паддинги голубая область */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -116,6 +116,8 @@ img {
 
 /*Контакты*/
 .contacts .contacts-link {
+  display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 
@@ -131,12 +133,45 @@ img {
 
 .list.contacts {
   display: flex;
-  margin-left: auto;
 }
 
 .contacts .item + .item {
   margin-left: 50px;
 }
+
+/* задаем иконки тел*/
+.contact-row {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-row .list {
+  display: flex;
+}
+
+.contact-row.item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cont-icon {
+  width: 16px;
+  height: 12px;
+
+  fill: currentColor;
+  margin-right: 10px;
+}
+/* .contacts.item::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  fill: #2196f3;
+} */
+
+/* .contacts.item::before :nth-child(1) {
+  margin-right: 10px;
+  background-image: url(../images/icon/icon-tel.svg);
+} */
 
 /* нижняя линия Хедер */
 .header-section {
@@ -206,6 +241,7 @@ img {
 }
 
 .button.primary {
+  border: 0;
   background-color: var(--main-blue-color);
   color: var(--main-white-color);
 }
@@ -285,6 +321,14 @@ img {
   margin-right: 30px;
 }
 
+.features-pic {
+  width: 270px;
+  height: 120px;
+  background-color: var(--basic-bg-color);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
 /* Чем мы занимаемся */
 .list-works {
   display: flex;
@@ -335,6 +379,26 @@ div.card-content {
 }
 
 /* ссылки на соцсети */
+.card-content .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-it:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social {
   display: flex;
   background-color: var(--main-white-color);
@@ -343,39 +407,61 @@ div.card-content {
   justify-content: center;
   align-items: center;
 }
-.social-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  background-color: inherit;
-  /* color: var(--icons-grey-color); */
-  border-radius: 50%;
-  /* outline: 1px solid red; */
-}
-.social-item:not(:last-child) {
-  padding-right: 10px;
-}
 
-.social-item {
-  display: block;
-}
-
-.social-icon {
-  width: 22px;
-  height: 22px;
-  background-color: inherit;
+.teamlink-icon {
   fill: var(--icons-grey-color);
 }
+.teamlink:hover .teamlink-icon,
+.teamlink:focus .teamlink-icon,
+.foot-link:hover .teamlink-icon,
+.foot-link:focus .teamlink-icon {
+  fill: var(--main-white-color);
+}
 
-.social-link:hover {
+.teamlink:hover,
+.teamlink:focus,
+.foot-link:hover,
+.foot-link:focus {
   background-color: var(--main-blue-color);
 }
 
-.social-link:hover .social-icon {
-  fill: var(--main-white-color);
+/* Clients */
+.clients-list {
+  display: flex;
 }
+
+.client-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-grey-color);
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.client-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-pic {
+  fill: var(--icons-grey-color);
+  width: 106px;
+  height: 60px;
+}
+
+.client-items:hover,
+.client-items:focus {
+  border: 1px solid var(--main-blue-color);
+}
+
+.client-items:hover .client-pic,
+.client-items:focus .client-pic {
+  fill: var(--main-blue-color);
+}
+
 /*Footer*/
 .footer {
   background-color: var(--accent-bg-color);
@@ -398,15 +484,16 @@ div.card-content {
   margin-bottom: 20px;
 }
 /* Адрес */
+.cfooter {
+  display: flex;
+  align-items: baseline;
+}
+
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 }
-/* 
-.addr-item {
-  display: block;
-} */
 
 .address-link {
   display: block;
@@ -427,7 +514,28 @@ div.card-content {
 .footer-join {
   display: inline-block;
   text-transform: uppercase;
+  /* align-items: flex-start;. */
+  margin-left: 70px;
 }
+
+.footer-join > .social {
+  background-color: inherit;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.foot-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /*Кнопки на портфолио*/
 .portfolio-button {
   padding: 6px 22px;

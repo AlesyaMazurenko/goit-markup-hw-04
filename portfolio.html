@@ -34,18 +34,26 @@
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
+      <div class="contact-row">
         <ul class="list contacts">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="contacts-link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="contacts-link">
+              <svg class="cont-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="contacts-link"
-              >+38 096 111 11 11</a
-            >
+            <a href="tel:+380961111111" class="contacts-link">
+              <svg class="cont-icon">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a>
           </li>
         </ul>
+      
+      </div>
+     
       </div>
     </header>
 
@@ -222,20 +230,57 @@
     </main>
 
     <!--Футер-->
-    <footer class="footer">
-      <div class="container footer-cont">
-        <a href="./index.html" class="logo"
-          >Web<span class="logo-footer">Studio</span></a
-        >
-        <address class="address">
-          г. Киев, пр-т Леси Украинки, 26
-          <a href="mailto:info@example.com" class="address-link"
-            >info@example.com</a
-          >
+<footer class="footer">
+  <div class="container cfooter">
+    <div class="footer-cont">
+      <a href="./index.html" class="logo">Web<span class="logo-footer">Studio</span></a>
+      <address class="address">
+        г. Киев, пр-т Леси Украинки, 26
+        <a href="mailto:info@example.com" class="address-link">info@example.com</a>
 
-          <a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a>
-        </address>
-      </div>
-    </footer>
-  </body>
+        <a href="tel:+380991111111" class="address-link">+38 099 111 11 11</a>
+      </address>
+    </div>
+
+    <div class="footer-join">
+      <h3>Присоединяйтесь</h3>
+      <!-- иконки -->
+      <ul class="social list">
+        <li class="social-it">
+          <a href="" class="foot-link">
+            <svg class="teamlink-icon" width="22" height="22">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-it">
+          <a class="foot-link">
+            <svg class="teamlink-icon" width="22" height="22">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-it">
+          <a class="foot-link">
+            <svg class="teamlink-icon" width="22" height="22">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-it">
+          <a class="foot-link">
+            <svg class="teamlink-icon" width="22" height="22">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+
+
+
+      </ul>
+    </div>
+  </div>
+  </div>
+</footer>
+</body>
 </html>
