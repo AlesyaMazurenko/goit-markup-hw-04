@@ -160,18 +160,6 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
-/* .contacts.item::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  fill: #2196f3;
-} */
-
-/* .contacts.item::before :nth-child(1) {
-  margin-right: 10px;
-  background-image: url(../images/icon/icon-tel.svg);
-} */
 
 /* нижняя линия Хедер */
 .header-section {
@@ -264,7 +252,8 @@ img {
 }
 
 .section-title.works,
-.section-title.team {
+.section-title.team,
+.section-title.clients {
   margin-bottom: 50px;
 }
 
@@ -327,7 +316,15 @@ img {
   background-color: var(--basic-bg-color);
   margin-bottom: 30px;
   padding: 25px 100px;
+
+  display: block;
 }
+
+/* .feature-icon {
+  display: block;
+  justify-content: center;
+  align-items: center;
+} */
 
 /* Чем мы занимаемся */
 .list-works {
@@ -402,7 +399,7 @@ div.card-content {
 .social {
   display: flex;
   background-color: var(--main-white-color);
-  padding-top: 16px;
+  margin-top: 16px;
 
   justify-content: center;
   align-items: center;
@@ -439,7 +436,6 @@ div.card-content {
   height: 92px;
   border: 1px solid var(--icons-grey-color);
   border-radius: 4px;
-  margin-top: 50px;
 }
 
 .client-items:not(:last-child) {
