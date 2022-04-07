@@ -298,6 +298,7 @@ img {
   color: var(--basic-text-color);
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .features-list {
@@ -311,20 +312,21 @@ img {
 }
 
 .features-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 270px;
   height: 120px;
   background-color: var(--basic-bg-color);
   margin-bottom: 30px;
-  padding: 25px 100px;
-
-  display: block;
+  border-radius: 4px;
 }
 
-/* .feature-icon {
-  display: block;
-  justify-content: center;
-  align-items: center;
-} */
+.feature-icon {
+  width: 70px;
+  height: 70px;
+}
 
 /* Чем мы занимаемся */
 .list-works {
@@ -407,11 +409,12 @@ div.card-content {
 
 .teamlink-icon {
   fill: var(--icons-grey-color);
+  width: 20px;
+  height: 20px;
 }
+
 .teamlink:hover .teamlink-icon,
-.teamlink:focus .teamlink-icon,
-.foot-link:hover .teamlink-icon,
-.foot-link:focus .teamlink-icon {
+.teamlink:focus .teamlink-icon {
   fill: var(--main-white-color);
 }
 
@@ -428,18 +431,25 @@ div.card-content {
 }
 
 .client-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   width: 170px;
   height: 92px;
-  border: 1px solid var(--icons-grey-color);
   border-radius: 4px;
 }
 
 .client-items:not(:last-child) {
   margin-right: 30px;
+}
+
+.client-link {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--icons-grey-color);
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .client-pic {
@@ -448,8 +458,8 @@ div.card-content {
   height: 60px;
 }
 
-.client-items:hover,
-.client-items:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--main-blue-color);
 }
 
@@ -510,7 +520,6 @@ div.card-content {
 .footer-join {
   display: inline-block;
   text-transform: uppercase;
-  /* align-items: flex-start;. */
   margin-left: 70px;
 }
 
@@ -530,6 +539,12 @@ div.card-content {
   border-radius: 50%;
 
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--main-white-color);
 }
 
 /*Кнопки на портфолио*/
